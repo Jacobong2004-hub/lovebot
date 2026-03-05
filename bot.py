@@ -2,7 +2,7 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes, MessageHandler, filters
 from telegram import ReplyKeyboardMarkup
 
-TOKEN = "8314480292:AAGGKNX5-9-kCOwgoJ93JKedggr2W6Hk20"
+TOKEN = "8314480292:AAGBnrgknumSQXozhSz0fwwHuKLoKrin2eQ"
 PHOTO_MAP = {
     "vintage photo": ("love1.jpg", "i would forever kiss u proudly like this"),
     "cool photo": ("love2.jpg", "we look to cool here,definitely meant for each other"),
