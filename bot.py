@@ -1,5 +1,6 @@
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
+from telegram import ReplyKeyboardMarkup
 
 # ===============================
 # BOT TOKEN
@@ -38,9 +39,20 @@ PHOTO_MAP = {
 # ===============================
 # START COMMAND
 # ===============================
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Hi ❤️")
+async def start(update, context):
 
+    keyboard = [
+        ["❤️ /menu"]
+    ]
+
+    await update.message.reply_text(
+        """Hi ❤️
+
+Welcome to LoveBot 🌹
+
+Click button below to see love photos 😊""",
+        reply_markup=ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
+    )
 # ===============================
 # MENU COMMAND
 # ===============================
